@@ -1,6 +1,6 @@
 fire bolt
 shocking grasp
-light
+chill touch
 toll the dead
 poison spray
 magic missile
@@ -9,7 +9,7 @@ shield
 mage armor
 chromatic orb
 tasha's hideous laughter
-ice knife
+leomund's tiny hut
 protection from evil and good
 mirror image
 invisibility

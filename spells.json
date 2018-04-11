@@ -7612,7 +7612,7 @@
             "somatic": true,
             "verbal": true
         },
-        "description": "* One effect that charmed or petrified the target\n\n* One curse, including the target\u2019s attunement to a cursed magic item\n\n* Any reduction to one of the target\u2019s ability scores\n\n* One effect reducing the target\u2019s hit point maximum",
+        "description": "You imbue a creature you touch with positive energy to undo a debilitating effect. You can reduce the target's exhaustion level by one, or end one of the following effects on the target: * One effect that charmed or petrified the target\n\n* One curse, including the target\u2019s attunement to a cursed magic item\n\n* Any reduction to one of the target\u2019s ability scores\n\n* One effect reducing the target\u2019s hit point maximum",
         "duration": "-",
         "level": "5",
         "name": "Greater Restoration",
@@ -10944,5 +10944,37 @@
         "range": "300 feet",
         "ritual": false,
         "school": "evocation"
+    },
+        {
+        "casting_time": "1 action",
+        "description": "You create a burst of thunderous sound that can be heard up to 100 feet away. Each creature within range, other than you, must succeed on a Constitution saving throw or take ld6 thunder damage. The spell's damage increases by ld6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6). ",
+        "duration": "-",
+        "level": "0",
+        "name": "Thunderclap",
+        "range": "5 feet",
+        "ritual": false,
+        "school": "evocation"
+    },
+            {
+        "casting_time": "1 action",
+        "description": "You choose a point within range and cause psychic energy to explode there. Each creature in a 20-foot-radius sphere centered on that point must make an Intelligence saving throw. A creature wiili an Intelligence score of 2 or lower can't be affected by this spell. A target takes 8d6 psychic damage on a failed save, or ha lf as much damage on a successful one. After a failed save, a target has muddled thoughts for 1 minute. During that time, it rolls a d6 and s ubtracts the number rolled from all its attack rolls and ability checks, as well as its Constitution saving throws to maintain concentration. The target can make an Intelligence saving throw at the end of each of its turns, ending the effect on itself on a success.",
+        "duration": "-",
+        "level": "0",
+        "name": "synaptic static",
+        "range": "120 feet",
+        "ritual": false,
+        "school": "enchantment"
+    },
+    {
+        "casting_time": "1 minute",
+        "description": "A 10-foot-radius immobile dome of force springs into existence around and above you and remains stationary for the duration. The spell ends if you leave its area. Nine creatures of Medium size or smaller can fit inside the dome with you. The spell fails if its area includes a larger creature or more than nine creatures. Creatures and objects within the dome when you cast this spell can move through it freely. All other creatures and objects are barred from passing through it. Spells and other magical effects can't extend through the dome or be cast through it. The atmosphere inside the space is comfortable and dry, regardless of the weather outside. Until the spell ends, you can command the interior to become dimly lit or dark. The dome is opaque from the outside, of any color you choose, but it is transparent from the inside. ",
+        "duration": "8 hours",
+        "level": "3",
+        "name": "Leomund's tiny hut",
+        "range": "self (10 foot radius hemisphere)",
+        "ritual": false,
+        "school": "evocation"
     }
 ]
+
+

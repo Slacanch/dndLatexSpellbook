@@ -66,7 +66,7 @@ with open(args.spellBook, 'r') as spellBook:
              'Save Throw', 'Attack', 'Ritual' , 'Description', 'Higher Levels']
 
     for spellName in spellBook:
-        spellName = spellName.strip()
+        spellName = spellName.strip().lower()
         try:
             currentSpell = allSpells[spellName]
         except KeyError:
@@ -121,7 +121,7 @@ for level in latexDict:
     tabular = latexDict[level]
     tabularList = tabular.split("\n")
     #changing positioning
-    tabularList[0] = "\\begin{longtable}{p{0.7in}p{0.5in}p{0.5in}cp{0.5in}cccp{3.2in}p{1.65in}}\n"
+    tabularList[0] = "\\begin{longtable}{p{0.7in}p{0.75in}p{0.5in}p{0.5in}p{0.5in}cccp{3.2in}p{1.65in}}\n"
     tabularList[1] = ''
     tabularList[len(tabularList)-2] = ""
     tabularList[len(tabularList)-1] = "\\end{longtable}"
@@ -142,6 +142,22 @@ for level in latexDict:
 
     finalLatex += "\n".join(tabularList) + "\n\n"
 
-finalLatex += "\end{landscape}\n\end{document}"
+finalLatex += "\end{landscape}\n"
 
+#tabella riassuntiva
+
+finalLatex += "\clearpage\n"
+
+for level in ['cantrip', '1', '2', '3', '4', '5', "6", "7", "8", "9"]:
+    if level in tablesDict:
+        sortedTable = sorted([x[0] for x in tablesDict[level]])
+
+        finalLatex += ""
+
+
+
+
+
+
+finalLatex += "\end{document}"
 print(finalLatex)
